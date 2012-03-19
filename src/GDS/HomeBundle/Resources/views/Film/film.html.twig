@@ -1,0 +1,17 @@
+{% extends "GDSHomeBundle::layout.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/gdshome/css/film.css') }}" type="text/css" />
+{% endblock %}
+    
+{% block scripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}  
+    <iframe src="http://www.youtube.com/embed/NTN_0ayKOJI" frameborder="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block content2 %}
+{% endblock %}

@@ -1,0 +1,3 @@
+GDS_photo:
+    pattern:  /
+    defaults: { _controller: GDSPhotoBundle:Default:index }

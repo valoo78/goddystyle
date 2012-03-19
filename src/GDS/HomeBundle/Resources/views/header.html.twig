@@ -1,0 +1,24 @@
+<div id="header">
+    <div class="center">
+        <img src="{{ asset('images/logo.png') }}" alt="Goddystyle" id="logo" />
+        
+        <object id="player" type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_multi.swf" width="200" height="20">
+            <param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_multi.swf" />
+            <param name="bgcolor" value="#fed200" />
+            <param name="FlashVars" value="mp3={{ asset('2.mp3') }}|{{ asset('1.mp3') }}&amp;height=20&amp;volume=50&amp;showvolume=1&amp;loop=1&amp;sliderwidth=6&amp;sliderheight=10&amp;loadingcolor=bd060d&amp;bgcolor=bd060d&amp;bgcolor1=fed200&amp;bgcolor2=f6980c&amp;sliderovercolor=bd060d&amp;buttonovercolor=bd060d&amp;showlist=0" />
+        </object>
+    </div>
+</div>
+
+<div id="menu">
+    <ul class="center">
+        <li><a href="{{ path('GDS_home') }}">ACCUEIL</a></li>
+        <li><a href="{{ path('GDS_film') }}">LE FILM</a></li>
+        <li><a href="#">LA LISTE</a></li>
+        <li><a href="{{ path('GDS_photo') }}">PHOTOS</a></li>
+        <li><a href="{{ path('GDS_party') }}">IN GODS WE TRUST !</a></li>
+        <li><a href="#">THE GOODY FOOD</a></li>
+        <li id="facebook"><a href="#"title="Rejoignez-nous sur Facebook !"></a></li>
+    </ul>
+    
+</div>

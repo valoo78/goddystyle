@@ -1,0 +1,33 @@
+html,body{
+    padding:0;
+    margin:0;
+}
+
+.center{
+    width:800px;
+    min-width:800px;
+    margin:0 auto;
+}
+/* *********************** 
+   HEADER
+* ***********************/
+#header{
+    display:block;
+    width:100%;
+    min-width:800px;
+    height:150px;
+    border-top:3px solid #bd060d;
+}
+
+#header #topbar{
+    width:inherit;
+    height:40px;
+    
+}
+
+#header img#logo{
+    float:left;
+    margin-top:10px;
+    height:131px;
+    width:200px;
+}

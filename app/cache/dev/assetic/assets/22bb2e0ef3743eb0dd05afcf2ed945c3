@@ -1,0 +1,30 @@
+html,body{
+    padding:0;
+    margin:0;
+}
+
+.center{
+    width:800px;
+    min-width:800px;
+    margin:0 auto;
+}
+/* *********************** 
+   HEADER
+* ***********************/
+#header{
+    display:block;
+    width:100%;
+    min-width:800px;
+    height:150px;
+}
+
+#header #topbar{
+    width:inherit;
+    height:50px;
+    background-color:red;
+}
+
+#header img#logo{
+    height:99px;
+    width:150px;
+}

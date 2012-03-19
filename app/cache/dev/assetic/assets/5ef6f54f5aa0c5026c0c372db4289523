@@ -1,0 +1,11 @@
+div#container{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-300px;
+    height:600px;
+    margin-left:-400px;
+    width:800px;
+    background:center no-repeat url('../../Resources/public/images/logo.png');
+}

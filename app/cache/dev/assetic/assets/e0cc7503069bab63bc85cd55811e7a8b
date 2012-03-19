@@ -1,0 +1,24 @@
+html,body{
+    padding:0;
+    margin:0;
+}
+
+.center{
+    width:800px;
+    min-width:800px;
+    margin:0 auto;
+    float:left;
+}
+/* *********************** 
+   HEADER
+* ***********************/
+#header{
+    display:block;
+    width:100%;
+    min-width:800px;
+    height:150px;
+}
+
+#header img#logo{
+    float:left;
+}

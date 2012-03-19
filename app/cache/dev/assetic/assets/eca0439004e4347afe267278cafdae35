@@ -1,0 +1,11 @@
+div#container{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:400px;
+    margin-top:-150px;/* height/2 */
+    width:800px;
+    margin-left:-400px;/* width/2 */
+    background:center no-repeat url('../../bundles/gdshome/images/logo.png');
+}

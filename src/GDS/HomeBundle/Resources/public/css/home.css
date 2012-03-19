@@ -1,0 +1,56 @@
+div#body{
+    background-color:#E1E1E1;
+}
+
+#slider_container,
+#message{
+    float:left;
+}
+
+#message{
+    width:400px;
+}
+
+#message li{
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    text-indent:21px;
+    background-position:center left;
+    background-repeat:no-repeat;
+}
+#message li:first-child{
+    margin-bottom:10px;
+}
+
+#message li.g{
+    background-image: url('../images/upper_g.png');
+}#message li.o{
+    background-image: url('../images/upper_o.png');
+}#message li.d{
+    background-image: url('../images/upper_d.png');
+}#message li.y{
+    background-image: url('../images/upper_y.png');
+}#message li.s{
+    background-image: url('../images/upper_s.png');
+}#message li.t{
+    background-image: url('../images/upper_t.png');
+}#message li.l{
+    background-image: url('../images/upper_l.png');
+}#message li.e{
+    background-image: url('../images/upper_e.png');
+}
+
+
+
+#content2 p{
+    float:left;
+    width:44%;
+    margin:0 3%;
+    text-align:justify;
+    font-size:14px;
+}
+
+#content2 p span{
+    font-weight:bold;
+}

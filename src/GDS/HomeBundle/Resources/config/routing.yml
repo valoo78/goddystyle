@@ -1,0 +1,11 @@
+GDS_home:
+    pattern:  /
+    defaults: { _controller: GDSHomeBundle:Default:index }
+    
+GDS_film:
+    pattern:  /film/
+    defaults: { _controller: GDSHomeBundle:Default:film }
+    
+GDS_party:
+    pattern:  /party/
+    defaults: { _controller: GDSHomeBundle:Default:party }

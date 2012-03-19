@@ -1,0 +1,16 @@
+GDSPhotoBundle:
+    resource: "@GDSPhotoBundle/Resources/config/routing.yml"
+    prefix:   /photo
+
+GDSHomeBundle:
+    resource: "@GDSHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+GDSOrderBundle:
+    resource: "@GDSOrderBundle/Resources/config/routing.yml"
+    prefix:   /order
+
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal

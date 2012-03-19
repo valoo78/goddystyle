@@ -1,0 +1,17 @@
+GDSOrderBundle_listeResto:
+    pattern:  /
+    defaults: { _controller: GDSOrderBundle:Order:index }
+    
+GDSOrderBundle_menu:
+    pattern: /menu/{resto}
+    defaults: { _controller: GDSOrderBundle:Order:menu }
+    requirements:
+        resto: mcdo|subway
+
+GDSOrderBundle_recap:
+    pattern: /recap
+    defaults: { _controller: GDSOrderBundle:Order:recap }
+
+GDSOrderBundle_confirm:
+    pattern: /confirm
+    defaults: { _controller: GDSOrderBundle:Order:confirm }

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>GoddyStyle</title>
+        
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('bundles/gdshome/css/standard.css') }}" type="text/css" />
+        {% endblock %}
+        
+        {% block scripts %}
+        {% endblock %}
+        <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}" />
+    </head>
+    
+    
+    <body>
+        {# HEADER #}
+        {% include "GDSHomeBundle::header.html.twig" %}
+            
+        <div id="body">     
+            <div class="center" id="content">                           
+                {% block content %}
+                {% endblock %}
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        
+        <div id="body2">     
+            <div class="center" id="content2">                           
+                {% block content2 %}
+                {% endblock %}
+                <div style="clear:both;"></div>
+            </div>
+        </div>   
+    </body>
+</html>

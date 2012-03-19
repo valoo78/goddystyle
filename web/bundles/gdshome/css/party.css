@@ -1,0 +1,53 @@
+div#body{
+    background-color:#E1E1E1;
+}
+
+#content #slider_container,
+#content #infos{
+    float:left;
+}
+
+#content #infos{
+    margin-left:20px;
+    width:380px;
+}
+
+#content #infos h1{
+    margin:0;
+    font-size:20px;
+    border-bottom:2px solid #ccc;
+}
+
+#content2 .column{
+    float:left;
+}
+
+#content2 #infos2{    
+    width:420px;
+    margin:0 15px;
+}
+
+#content2 #infos2 li{ 
+    height:24px;
+    line-height:24px;
+    vertical-align:middle;
+    text-indent:24px;
+    background-repeat:no-repeat;
+    background-position:center left;
+}
+
+#content2 #infos2 li#ligne5{ 
+    background-image:url('../images/ligne5.png');
+}
+
+#content2 #infos2 li#ligne7{ 
+    background-image:url('../images/ligne7.png');
+}
+
+#content2 #googlemap{
+    width:400px;
+    margin:0 15px;
+    padding:9px;
+    border:1px solid #ccc;
+    background-color:white;
+}

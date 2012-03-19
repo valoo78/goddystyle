@@ -1,0 +1,7 @@
+parameters:
+#    gds_order.example.class: GDS\OrderBundle\Example
+
+services:
+#    gds_order.example:
+#        class: %gds_order.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

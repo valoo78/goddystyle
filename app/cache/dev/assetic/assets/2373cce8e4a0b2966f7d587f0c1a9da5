@@ -1,0 +1,42 @@
+div#container{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:400px;
+    margin-top:-275px;/* height/2 & offset=-75*/
+    width:800px;
+    margin-left:-400px;/* width/2 */
+    background:center no-repeat url('../../bundles/gdshome/images/logo.png');
+    border:1px solid black;
+}
+
+ul#menu{
+    list-style: none;
+    border:none;
+    padding:0;
+    float:left;
+    display:block;
+    margin-top:310px;
+    width:auto;
+}
+
+ul#menu li{
+    float:left;
+    width:130px;
+    background-color:#ddd;
+    border:1px solid #aaa;
+    height:60px;
+    line-height:60px;  
+    text-align:center;
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    color:black;
+    
+    cursor:pointer;
+}
+
+ul#menu li:hover{
+    border-bottom:3px solid #1B1B1B;
+}
