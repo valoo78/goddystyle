@@ -67,7 +67,14 @@ class __TwigTemplate_cec296852c4849ca5ab5c542b5422912 extends Twig_Template
         echo "                <div style=\"clear:both;\"></div>
             </div>
         </div>   
-    </body>
+            
+            
+        ";
+        // line 40
+        echo "        ";
+        $this->env->loadTemplate("GDSHomeBundle::footer.html.twig")->display($context);
+        // line 41
+        echo "    </body>
 </html>
 ";
     }

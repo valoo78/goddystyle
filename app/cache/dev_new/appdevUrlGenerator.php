@@ -36,10 +36,10 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        'GDS_home' => true,
        'GDS_film' => true,
        'GDS_party' => true,
-       'GDSOrderBundle_listeResto' => true,
-       'GDSOrderBundle_menu' => true,
-       'GDSOrderBundle_recap' => true,
-       'GDSOrderBundle_confirm' => true,
+       'GDS_order_listeResto' => true,
+       'GDS_order_menu' => true,
+       'GDS_order_recap' => true,
+       'GDS_order_confirm' => true,
     );
 
     /**
@@ -178,22 +178,22 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         return array(array (), array (  '_controller' => 'GDS\\HomeBundle\\Controller\\DefaultController::partyAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/party/',  ),));
     }
 
-    private function getGDSOrderBundle_listeRestoRouteInfo()
+    private function getGDS_order_listeRestoRouteInfo()
     {
         return array(array (), array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::indexAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/order/',  ),));
     }
 
-    private function getGDSOrderBundle_menuRouteInfo()
+    private function getGDS_order_menuRouteInfo()
     {
-        return array(array (  0 => 'resto',), array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::menuAction',), array (  'resto' => 'mcdo|subway',), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => 'mcdo|subway',    3 => 'resto',  ),  1 =>   array (    0 => 'text',    1 => '/order/menu',  ),));
+        return array(array (  0 => 'resto',), array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::menuAction',), array (  'resto' => 'mcdo|subway|grec|nooi|thevenin|bdoree|asie|wokbar',), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => 'mcdo|subway|grec|nooi|thevenin|bdoree|asie|wokbar',    3 => 'resto',  ),  1 =>   array (    0 => 'text',    1 => '/order',  ),));
     }
 
-    private function getGDSOrderBundle_recapRouteInfo()
+    private function getGDS_order_recapRouteInfo()
     {
         return array(array (), array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::recapAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/order/recap',  ),));
     }
 
-    private function getGDSOrderBundle_confirmRouteInfo()
+    private function getGDS_order_confirmRouteInfo()
     {
         return array(array (), array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::confirmAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/order/confirm',  ),));
     }

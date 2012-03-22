@@ -28,24 +28,28 @@ class __TwigTemplate_8dfe9188833928e473ada697647315eb extends Twig_Template
 
 <div id=\"menu\">
     <ul class=\"center\">
+        <li class=\"separator\"></li>
         <li><a href=\"";
-        // line 15
+        // line 16
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("GDS_home"), "html", null, true);
         echo "\">ACCUEIL</a></li>
         <li><a href=\"";
-        // line 16
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("GDS_film"), "html", null, true);
         echo "\">LE FILM</a></li>
         <li><a href=\"#\">LA LISTE</a></li>
         <li><a href=\"";
-        // line 18
+        // line 19
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("GDS_photo"), "html", null, true);
         echo "\">PHOTOS</a></li>
         <li><a href=\"";
-        // line 19
+        // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("GDS_party"), "html", null, true);
         echo "\">IN GODS WE TRUST !</a></li>
-        <li><a href=\"#\">THE GOODY FOOD</a></li>
+        <li><a href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("GDS_order_listeResto"), "html", null, true);
+        echo "\">THE GOODY FOOD</a></li>
         <li id=\"facebook\"><a href=\"#\"title=\"Rejoignez-nous sur Facebook !\"></a></li>
     </ul>
     

@@ -1,11 +1,68 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Livraison de repas</title>
-    </head>
-    <body>
-        <h1>Choisissez votre restaurant</h1>
+{% extends "GDSHomeBundle::layout.html.twig" %}
 
-        <img src="{{ asset('images/logo.png') }}" alt="GoddyStyle" height="200" width="300" />
-    </body>
-</html>
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/gdsorder/css/order.css') }}" type="text/css" />
+{% endblock %}
+    
+{% block scripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}  
+{% endblock %}
+
+{% block content2 %}
+    <h1>Liste des restaurants</h1>
+    <ul id="liste_resto">
+        <li>
+            <a href="{{ path('GDS_order_menu', {'resto': "mcdo"}) }}">
+                <img src="{{ asset('bundles/gdsorder/images/mcdo.png') }}" alt="McDonald" />
+            </a>
+        </li>
+        
+        <li>
+            <a href="{{ path('GDS_order_menu', {'resto': "subway"}) }}">
+                <img src="{{ asset('bundles/gdsorder/images/subway.jpg') }}" alt="Subway" />
+            </a>
+        </li>
+        
+        <li>
+            <a href="{{ path('GDS_order_menu', {'resto': "grec"}) }}">
+                <img src="{{ asset('bundles/gdsorder/images/grec.jpg') }}" alt="MacDoner" />
+            </a>
+        </li>
+        
+        <li>
+            <a href="{{ path('GDS_order_menu', {'resto': "nooi"}) }}">
+                <img src="{{ asset('bundles/gdsorder/images/nooi.jpg') }}" alt="Nooi" />
+            </a>
+        </li>
+        
+        <li>
+            <a href="{{ path('GDS_order_menu', {'resto': "thevenin"}) }}">
+                <img src="{{ asset('bundles/gdsorder/images/thevenin.jpg') }}" alt="Thevenin" />
+            </a>
+        </li>
+        
+        <li>
+            <a href="{{ path('GDS_order_menu', {'resto': "bdoree"}) }}">
+                <img src="{{ asset('bundles/gdsorder/images/brioche.jpg') }}" alt="Brioche Dorée" />
+            </a>
+        </li>
+        
+        <li>
+            <a href="{{ path('GDS_order_menu', {'resto': "asie"}) }}">
+                <img src="{{ asset('bundles/gdsorder/images/china.jpg') }}" alt="Chinois" />
+            </a>
+        </li>
+        
+        <li>
+            <a href="{{ path('GDS_order_menu', {'resto': "wokbar"}) }}">
+                <img src="{{ asset('bundles/gdsorder/images/wokbar.jpg') }}" alt="Wokbar" />
+            </a>
+        </li>
+        
+        <li class="clearer"></li>
+    </ul>
+{% endblock %}

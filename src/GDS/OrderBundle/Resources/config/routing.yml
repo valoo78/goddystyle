@@ -1,17 +1,17 @@
-GDSOrderBundle_listeResto:
+GDS_order_listeResto:
     pattern:  /
     defaults: { _controller: GDSOrderBundle:Order:index }
     
-GDSOrderBundle_menu:
-    pattern: /menu/{resto}
+GDS_order_menu:
+    pattern: /{resto}
     defaults: { _controller: GDSOrderBundle:Order:menu }
     requirements:
-        resto: mcdo|subway
+        resto: mcdo|subway|grec|nooi|thevenin|bdoree|asie|wokbar
 
-GDSOrderBundle_recap:
+GDS_order_recap:
     pattern: /recap
     defaults: { _controller: GDSOrderBundle:Order:recap }
 
-GDSOrderBundle_confirm:
+GDS_order_confirm:
     pattern: /confirm
     defaults: { _controller: GDSOrderBundle:Order:confirm }

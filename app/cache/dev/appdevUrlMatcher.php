@@ -168,27 +168,27 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/order')) {
-            // GDSOrderBundle_listeResto
+            // GDS_order_listeResto
             if (rtrim($pathinfo, '/') === '/order') {
                 if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'GDSOrderBundle_listeResto');
+                    return $this->redirect($pathinfo.'/', 'GDS_order_listeResto');
                 }
-                return array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::indexAction',  '_route' => 'GDSOrderBundle_listeResto',);
+                return array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::indexAction',  '_route' => 'GDS_order_listeResto',);
             }
 
-            // GDSOrderBundle_menu
-            if (0 === strpos($pathinfo, '/order/menu') && preg_match('#^/order/menu/(?P<resto>mcdo|subway)$#xs', $pathinfo, $matches)) {
-                return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::menuAction',)), array('_route' => 'GDSOrderBundle_menu'));
+            // GDS_order_menu
+            if (preg_match('#^/order/(?P<resto>mcdo|subway|grec|nooi|thevenin|bdoree|asie|wokbar)$#xs', $pathinfo, $matches)) {
+                return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::menuAction',)), array('_route' => 'GDS_order_menu'));
             }
 
-            // GDSOrderBundle_recap
+            // GDS_order_recap
             if ($pathinfo === '/order/recap') {
-                return array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::recapAction',  '_route' => 'GDSOrderBundle_recap',);
+                return array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::recapAction',  '_route' => 'GDS_order_recap',);
             }
 
-            // GDSOrderBundle_confirm
+            // GDS_order_confirm
             if ($pathinfo === '/order/confirm') {
-                return array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::confirmAction',  '_route' => 'GDSOrderBundle_confirm',);
+                return array (  '_controller' => 'GDS\\OrderBundle\\Controller\\OrderController::confirmAction',  '_route' => 'GDS_order_confirm',);
             }
 
         }

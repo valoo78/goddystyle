@@ -14,7 +14,7 @@ class OrderController extends Controller
     }
     public function menuAction($resto)
     {
-        return $this->render('GDSOrderBundle:Liste:menu.html.twig');
+        return $this->render('GDSOrderBundle:Liste:menu.html.twig',array('resto' => $resto));
     }
     public function recapAction()
     {

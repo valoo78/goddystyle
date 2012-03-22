@@ -33,10 +33,9 @@ class __TwigTemplate_cec296852c4849ca5ab5c542b5422912 extends Twig_Template
         // line 11
         $this->displayBlock('scripts', $context, $blocks);
         // line 13
-        echo "        
-        <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+        echo "        <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
         <link rel=\"icon\" type=\"image/png\" href=\"";
-        // line 15
+        // line 14
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/favicon.png"), "html", null, true);
         echo "\" />
     </head>
@@ -44,17 +43,17 @@ class __TwigTemplate_cec296852c4849ca5ab5c542b5422912 extends Twig_Template
     
     <body>
         ";
-        // line 21
+        // line 20
         echo "        ";
         $this->env->loadTemplate("GDSHomeBundle::header.html.twig")->display($context);
-        // line 22
+        // line 21
         echo "            
         <div id=\"body\">     
             <div class=\"center\" id=\"content\">                           
                 ";
-        // line 25
+        // line 24
         $this->displayBlock('content', $context, $blocks);
-        // line 27
+        // line 26
         echo "                <div style=\"clear:both;\"></div>
             </div>
         </div>
@@ -62,13 +61,20 @@ class __TwigTemplate_cec296852c4849ca5ab5c542b5422912 extends Twig_Template
         <div id=\"body2\">     
             <div class=\"center\" id=\"content2\">                           
                 ";
-        // line 33
+        // line 32
         $this->displayBlock('content2', $context, $blocks);
-        // line 35
+        // line 34
         echo "                <div style=\"clear:both;\"></div>
             </div>
         </div>   
-    </body>
+            
+            
+        ";
+        // line 40
+        echo "        ";
+        $this->env->loadTemplate("GDSHomeBundle::footer.html.twig")->display($context);
+        // line 41
+        echo "    </body>
 </html>
 ";
     }
@@ -90,17 +96,17 @@ class __TwigTemplate_cec296852c4849ca5ab5c542b5422912 extends Twig_Template
         echo "        ";
     }
 
-    // line 25
+    // line 24
     public function block_content($context, array $blocks = array())
     {
-        // line 26
+        // line 25
         echo "                ";
     }
 
-    // line 33
+    // line 32
     public function block_content2($context, array $blocks = array())
     {
-        // line 34
+        // line 33
         echo "                ";
     }
 
