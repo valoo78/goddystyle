@@ -1,39 +1,4 @@
-/* ******************
- * LISTE DES RESTOS *
- * ******************/
-
-#body1{    
-    background-color:#eee;
-}
-#body2{    
-    background-color:white;
-}
-
-#content2 h1{
-    margin:0;
-    font-size:20px;
-    border-bottom:2px solid #ccc;
-}
-
-#content2 ul#liste_resto{
-    width:840px;
-    margin:30px;
-}
-
-#content2 ul#liste_resto li{
-    width:150px;
-    float:left;
-    margin:15px 25px;
-}
-
-#content2 ul#liste_resto li.clearer{
-    width:1px;
-    height:1px;
-    float:none;
-    margin:0;
-}
-
-#content2 ul#liste_resto li a img{
+img.logo_resto{
     height:150px;
     width:150px;
     padding:4px;
@@ -41,6 +6,18 @@
     background-color:#eee;
 }
 
-#content2 ul#liste_resto li a:hover img{
-    border-color:black;
+div#commande{
+    float:right;
+    background-color:white;
+    border:2px solid #ccc;
+    
+    height:300px;
+    width:250px;
+}
+
+div#commande h1{
+    border-bottom:2px solid #bd060d;
+    font-size:16px;
+    width:90%;
+    margin-left:5%;
 }
